@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      The Survey form must be submitted before <br />
+      the semester ends!
+    </p>
+    <form id="survey-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Email" required />
+
+      <label for="number">Number (10-25):</label>
+      <input type="number" id="number" placeholder="Number" required />
+
+      <label for="dropdown">Payment Method:</label>
+      <select name="dropdown" id="dropdown">
+        <option value="option1">MasterCard</option>
+        <option value="option2">PayPal</option>
+        <option value="option3">Credit Card</option>
+      </select>
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" name="radio" id="radio1" value="option1" />
+        <label for="radio1">Male</label>
+        <input type="radio" name="radio" id="radio2" value="option2" />
+        <label for="radio2">Female</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Check Your Course:</legend>
+        <input type="checkbox" id="checkbox1" value="option1" />
+        <label for="checkbox1">Course 1(time:08:00)</label>
+        <input type="checkbox" id="checkbox2" value="option2" />
+        <label for="checkbox2">Course 2(time:14:00)</label>
+        <input type="checkbox" id="checkbox3" value="option3" />
+        <label for="checkbox3">I don't attend any course</label>
+      </fieldset>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
